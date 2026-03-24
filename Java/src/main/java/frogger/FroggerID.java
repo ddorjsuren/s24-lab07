@@ -9,4 +9,13 @@ public record FroggerID(String firstName,
                      String zipCode,
                      String state,
                      String gender) {
+    public FroggerID(String firstName, String lastName, String phoneNumber,
+                     String zipCode, String state, String gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.zipCode = zipCode;
+        this.state = state;
+        this.gender = gender;
+    }
 }
